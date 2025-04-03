@@ -24,6 +24,7 @@
     <PackageReference Include="Avalonia.Controls.DataGrid" />
     <PackageReference Include="Avalonia.Themes.Simple" />
     <PackageReference Include="System.Linq.Dynamic.Core" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux" />
   </ItemGroup>
 
 
@@ -93,12 +94,15 @@
       <DependentUpon>en-US.axaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Locale\zh-CN.axaml.cs">
-      <DependentUpon>zh-CN.axaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Locale\nl-NL.axaml.cs">
       <DependentUpon>nl-NL.axaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Locale\pt-pt.axaml.cs">
+      <DependentUpon>pt-pt.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Locale\zh-CN.axaml.cs">
+      <DependentUpon>zh-CN.axaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

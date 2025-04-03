@@ -173,21 +173,37 @@
         <Style.Resources>
             <theme:PlusNineConverter x:Key="NineConverter" />
         </Style.Resources>
+
         <Style.Animations>
-            <Animation Easing="SineEaseOut"
-                       FillMode="Forward"
-                       Duration="0:0:0.3">
+            <Animation FillMode="Forward" Duration="0:0:0.4">
+                <Animation.Easing>
+                    <suki:SukiEasingOutBounced BounceIntensity="Soft" />
+                </Animation.Easing>
                 <KeyFrame Cue="0%">
-                    <Setter Property="ScaleTransform.ScaleY" Value="0.92" />
-                    <Setter Property="ScaleTransform.ScaleX" Value="0.95" />
-                    <Setter Property="Opacity" Value="0" />
+                    <Setter Property="ScaleTransform.ScaleY" Value="0.7" />
+                    <Setter Property="ScaleTransform.ScaleX" Value="0.7" />
                 </KeyFrame>
+
                 <KeyFrame Cue="100%">
                     <Setter Property="ScaleTransform.ScaleY" Value="1" />
                     <Setter Property="ScaleTransform.ScaleX" Value="1" />
+
+                </KeyFrame>
+            </Animation>
+
+            <Animation FillMode="Forward" Duration="0:0:0.4">
+                <Animation.Easing>
+                    <SineEaseInOut />
+                </Animation.Easing>
+                <KeyFrame Cue="0%">
+                    <Setter Property="Opacity" Value="0" />
+                </KeyFrame>
+
+                <KeyFrame Cue="100%">
                     <Setter Property="Opacity" Value="1" />
                 </KeyFrame>
             </Animation>
+
         </Style.Animations>
     </Style>
 
